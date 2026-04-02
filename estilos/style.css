@@ -63,6 +63,20 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
+div.campo > input {
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+div.campo > input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
 form > div.campo {
     background-color: #602c82d5;
     display: block;
@@ -70,7 +84,7 @@ form > div.campo {
     height: 40px;
     border-radius: 5px;
     margin: 5px 0px;
-
+    
 }
 
 div.campo > label {
