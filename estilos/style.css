@@ -29,13 +29,14 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+   
     overflow: hidden;
     background-color: white;
     width: 200px;
     height: 510px;
     border-radius: 18px;
     box-shadow: 0px 0px 10px black;
+    transform: translate(-50%, -50%);
     transition: width 0.4s, height 0.4s;
     transition-timing-function: ease;
 }
@@ -63,19 +64,6 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
-div.campo > input {
-    background-color: transparent;
-    border: none;
-    color: rgb(255, 255, 255);
-    outline: none;
-    box-sizing: border-box;
-
-}
-
-div.campo > input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
 
 form > div.campo {
     background-color: #602c82d5;
@@ -91,6 +79,23 @@ div.campo > label {
     display: none;
 }
 
+div.campo > span {
+    color: black;
+    font-size: 1.8em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #602c827a;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-38px);
+}
 
 form > input[type=submit] {
     display: block;
